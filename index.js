@@ -22,8 +22,7 @@ searchWeather.addEventListener('click', (e) => {
     myWeather.classList.remove('active-tab')
     inputSection.classList.add('active')
     sec1.classList.remove('active')
-    // grantAccess.classList.remove('active')
-    // WeatherSection.classList.remove('active')
+
 })
 
 
@@ -67,9 +66,7 @@ async function fetchUserInfo(coordinates) {
             loading.classList.remove('active')
             WeatherSection.classList.add('active')
             boxSection.classList.add('active')
-            // windspeed.classList.add('active')
-            // clouds.classList.add('active')
-            // humidity.classList.add('active')
+        
             renderWeatherInfo(data)
         }, 1000)
     }
